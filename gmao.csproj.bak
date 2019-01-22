@@ -1,0 +1,540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{18F0B3F6-59FD-4328-916C-A183EDD3B8F9}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>RibbonSimplePad</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RibbonSimplePad</RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>0</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>0</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Atp.Common, Version=5.0.40.5183, Culture=neutral, PublicKeyToken=0efede2d78b28dff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Mes documents\Atp\UltimateMail v5.0.5183\Samples\Win\Mail\CS\Pop3Client\bin\Debug\Atp.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Atp.Mail, Version=5.0.40.5183, Culture=neutral, PublicKeyToken=0efede2d78b28dff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Mes documents\Atp\UltimateMail v5.0.5183\Samples\Win\Mail\CS\Pop3Client\bin\Debug\Atp.Mail.dll</HintPath>
+    </Reference>
+    <Reference Include="Atp.Network, Version=5.0.40.5183, Culture=neutral, PublicKeyToken=0efede2d78b28dff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Mes documents\Atp\UltimateMail v5.0.5183\Samples\Win\Mail\CS\Pop3Client\bin\Debug\Atp.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="Atp.NetworkSecure, Version=5.0.40.5183, Culture=neutral, PublicKeyToken=0efede2d78b28dff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Mes documents\Atp\UltimateMail v5.0.5183\Samples\Win\Mail\CS\Pop3Client\bin\Debug\Atp.NetworkSecure.dll</HintPath>
+    </Reference>
+    <Reference Include="colorprogressbar">
+      <HintPath>..\colorprogressbar.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=7.3.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v10.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>
+      </HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v10.1.Core, Version=10.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeRush.Common, Version=10.1.7.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.CodeRush.Controls, Version=10.1.7.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeRush.Core, Version=10.1.7.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.CodeRush.Interop, Version=10.1.7.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.CodeRush.PlugInCore, Version=10.1.7.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.CodeRush.StructuralParser, Version=10.1.7.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.CodeRush.UserControls, Version=10.1.7.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.Data.v10.1">
+      <Name>DevExpress.Data.v10.1</Name>
+      <HintPath>
+      </HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.DXCore.Controls.Data.v6.3, Version=10.1.7.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Controls.Utils.v6.3, Version=10.1.7.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Controls.XtraEditors.v6.3, Version=10.1.7.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DXCore.Controls.XtraGrid.v6.3, Version=10.1.7.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DXCore.Controls.XtraLayout.v6.3, Version=10.1.7.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Localization, Version=10.1.7.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Platform, Version=10.1.7.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.OfficeSkins.v10.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>
+      </HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Refactor.Core, Version=10.1.7.0, Culture=neutral, PublicKeyToken=3f8e338797a7a380, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Tutorials.v10.1">
+      <Name>DevExpress.Tutorials.v10.1</Name>
+      <HintPath>
+      </HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v10.1">
+      <Name>DevExpress.Utils.v10.1</Name>
+      <HintPath>
+      </HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v10.1, Version=10.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v10.1">
+      <Name>DevExpress.XtraBars.v10.1</Name>
+      <HintPath>
+      </HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v10.1, Version=10.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v10.1.Design, Version=10.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v10.1.Extensions, Version=10.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v10.1.UI, Version=10.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v10.1.Web.Design, Version=10.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v10.1">
+      <Name>DevExpress.XtraEditors.v10.1</Name>
+      <HintPath>
+      </HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v10.1, Version=10.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DevExpress.XtraGrid.v10.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v10.1.Design, Version=10.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DevExpress.XtraGrid.v10.1.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v10.1, Version=10.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v10.1.Design, Version=10.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DevExpress.XtraLayout.v10.1.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v10.1, Version=10.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v10.1, Version=10.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v10.1.Core, Version=10.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v10.1.Extensions, Version=10.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSpellChecker.v10.1, Version=10.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraSpellChecker.v10.1.Core, Version=10.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EAGetMail40">
+      <HintPath>..\..\..\pop3_imap4_simple.csharp\EAGetMail40.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Data.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files\Janus Systems\Controls for Microsoft .NET\Janus.Data.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.ButtonBar.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files\Janus Systems\Controls for Microsoft .NET\Janus.Windows.ButtonBar.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.CalendarCombo.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files\Janus Systems\Controls for Microsoft .NET\Janus.Windows.CalendarCombo.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Common.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files\Janus Systems\Controls for Microsoft .NET\Janus.Windows.Common.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.ExplorerBar.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files\Janus Systems\Controls for Microsoft .NET\Janus.Windows.ExplorerBar.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.FilterEditor.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files\Janus Systems\Controls for Microsoft .NET\Janus.Windows.FilterEditor.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.GridEX.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files\Janus Systems\Controls for Microsoft .NET\Janus.Windows.GridEX.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Ribbon.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files\Janus Systems\Controls for Microsoft .NET\Janus.Windows.Ribbon.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Schedule.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files\Janus Systems\Controls for Microsoft .NET\Janus.Windows.Schedule.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.TimeLine.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files\Janus Systems\Controls for Microsoft .NET\Janus.Windows.TimeLine.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.UI.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files\Janus Systems\Controls for Microsoft .NET\Janus.Windows.UI.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Outlook.v9.0, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.OLE.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ajoutinfosupp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajoutinfosupp.Designer.cs">
+      <DependentUpon>ajoutinfosupp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ajoutIntervention.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajoutIntervention.Designer.cs">
+      <DependentUpon>ajoutIntervention.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Classes\CConstants.cs" />
+    <Compile Include="Classes\CDataServices.cs" />
+    <Compile Include="Classes\CSQLFunctions.cs" />
+    <Compile Include="Classes\CTreeView.cs" />
+    <Compile Include="Classes\sql_gmao.cs" />
+    <Compile Include="clsAbout.cs" />
+    <Compile Include="ColorBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contrat_option.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contrat_option.designer.cs">
+      <DependentUpon>contrat_option.cs</DependentUpon>
+    </Compile>
+    <Compile Include="contrat_zoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contrat_zoom.designer.cs">
+      <DependentUpon>contrat_zoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fiche_intervenant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fiche_intervenant.Designer.cs">
+      <DependentUpon>fiche_intervenant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fiche_technique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fiche_technique.designer.cs">
+      <DependentUpon>Fiche_technique.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDbFind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmNewNode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTreeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="home.Designer.cs">
+      <DependentUpon>home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login1.Designer.cs">
+      <DependentUpon>login1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifierIntervention.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifierIntervention.Designer.cs">
+      <DependentUpon>ModifierIntervention.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modifierPieceUtilisee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modifierPieceUtilisee.Designer.cs">
+      <DependentUpon>modifierPieceUtilisee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\modGlobals.cs" />
+    <Compile Include="pieceOfintervention.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pieceOfintervention.Designer.cs">
+      <DependentUpon>pieceOfintervention.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Security\CertProvider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\CertProvider.designer.cs">
+      <DependentUpon>CertProvider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\CertTextExtractor.cs" />
+    <Compile Include="Security\CertValidator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\CertValidator.designer.cs">
+      <DependentUpon>CertValidator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Util.cs" />
+    <Compile Include="WAEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WAEL.designer.cs">
+      <DependentUpon>WAEL.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ajoutinfosupp.resx">
+      <DependentUpon>ajoutinfosupp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ajoutIntervention.resx">
+      <DependentUpon>ajoutIntervention.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="contrat_option.resx">
+      <DependentUpon>contrat_option.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="contrat_zoom.resx">
+      <DependentUpon>contrat_zoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fiche_intervenant.resx">
+      <DependentUpon>fiche_intervenant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifierIntervention.resx">
+      <DependentUpon>ModifierIntervention.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifierPieceUtilisee.resx">
+      <DependentUpon>modifierPieceUtilisee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pieceOfintervention.resx">
+      <DependentUpon>pieceOfintervention.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WAEL.resx">
+      <DependentUpon>WAEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Resources\1655948.jpg" />
+    <None Include="Resources\16559481.jpg" />
+    <None Include="Resources\16559482.jpg" />
+    <None Include="Resources\livres-agenda-education-bibliotheque-icone-5155-32.png" />
+    <None Include="Resources\homme-utilisateurs-icone-5749-32.png" />
+    <None Include="Resources\statistiques-icone-8432-32.png" />
+    <None Include="Resources\homme-utilisateurs-icone-5749-321.png" />
+    <None Include="Resources\livres-agenda-education-bibliotheque-icone-5155-321.png" />
+    <None Include="Resources\statistiques-icone-8432-321.png" />
+    <None Include="Resources\statistiques-icone-8432-322.png" />
+    <None Include="Resources\background_repeat.jpg" />
+    <Content Include="logo.ico" />
+    <None Include="Resources\ajouter-icone-5107-16.png" />
+    <None Include="Resources\bleu-dossier-ouvrez-icone-6766-16.png" />
+    <None Include="Resources\pie-chart-modifier-icone-8023-16.png" />
+    <None Include="Resources\supprimer-icone-6859-16.png" />
+    <None Include="Resources\page-programme-installation-icone-9710-16.png" />
+    <None Include="Resources\toggle-bullet-plus-icone-6017-32.png" />
+    <None Include="Resources\toggle-bullet-moins-icone-6601-32.png" />
+    <None Include="Resources\toggle-bullet-plus-icone-6017-321.png" />
+    <None Include="Resources\toggle-bullet-moins-icone-6601-321.png" />
+    <None Include="Resources\update.png" />
+    <None Include="Resources\access.png" />
+    <None Include="Resources\excel.png" />
+    <None Include="Resources\format_inconnu.png" />
+    <None Include="Resources\pdf.png" />
+    <None Include="Resources\pic.png" />
+    <None Include="Resources\powerpoint.png" />
+    <None Include="Resources\txt.png" />
+    <None Include="Resources\word.png" />
+    <Content Include="scheduled_tasks.ico" />
+    <EmbeddedResource Include="Fiche_technique.resx">
+      <DependentUpon>Fiche_technique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDbFind.resx">
+      <DependentUpon>frmDbFind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmNewNode.resx">
+      <DependentUpon>frmNewNode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTreeView.resx">
+      <DependentUpon>frmTreeView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.fr.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home.resx">
+      <DependentUpon>home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login1.resx">
+      <DependentUpon>login1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="online.gif" />
+    <None Include="Resources\log.png" />
+    <None Include="Resources\log.jpg" />
+    <None Include="Resources\lock.png" />
+    <None Include="Resources\but.png" />
+    <None Include="Resources\lock1.png" />
+    <None Include="Resources\lock2.png" />
+    <Content Include="RibbonSimplePad.ico" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\CertProvider.resx">
+      <DependentUpon>CertProvider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\CertValidator.resx">
+      <DependentUpon>CertValidator.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+  </PropertyGroup>
+</Project>
